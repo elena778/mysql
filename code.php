@@ -1,8 +1,8 @@
  <?php
 $servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$username = "root";
+$password = "123456";
+$dbname = "api";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -11,7 +11,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, first_name, last_name, email, password FROM Users";
+$sql = "SELECT id, first_name, last_name, email, password FROM users";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
