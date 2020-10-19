@@ -1,6 +1,6 @@
 <html>
 <body>
-<a href="code.php">php</a>
+<a href="../signup/controllers/sign_up.php">php</a>
 <form action="code.php" method="post">
 Login: <input type="text" name="login"><br>
 Password:<input type="password" name="password">
