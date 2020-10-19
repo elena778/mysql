@@ -3,12 +3,12 @@ $login=$_POST['name']; // $_POST['name']
 $password=$_POST['pass'];
 
 if ($login=="" || $password==""){
-	echo "Empty login or password";
+	exit("Empty login or password");
 	redirect("http://localhost",false);
 } 
 
 if ($login!==$_POST["name"] || $password!==$_POST["pass"]){
- 	echo "Wrong login or password";
+ 	exit("Wrong login or password");
 	redirect('http://localhost',false);
 }
 
