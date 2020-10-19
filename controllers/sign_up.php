@@ -13,7 +13,7 @@ if ($login!==name || $password!==pass){
 }
 
 
-if ($_POST["name"] || $_POST["pass"]) {
+if (!empty($_POST["name"]) and !empty($_POST["pass"])) {
 	redirect('http://localhost',false);
 }
 
