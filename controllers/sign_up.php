@@ -1,6 +1,6 @@
 <?
-$login=_POST['name']; // $_POST['name']
-$password=_POST['pass'];
+$login=$_POST['name']; // $_POST['name']
+$password=$_POST['pass'];
 
 if ($login=="" || $password==""){
 	//print("Empty login or password");
