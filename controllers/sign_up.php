@@ -4,12 +4,12 @@ $password=$_POST['pass'];
 
 if ($login=="" || $password==""){
 	//print("Empty login or password");
-	redirect("http://localhost/views/sign_up.php",false);
+	redirect("http://localhost",false);
 } 
 
 if ($login!==name || $password!==pass){
  	//print("Wrong login or password");
-	redirect('http://localhost/views/sign_up.php',false);
+	redirect('http://localhost',false);
 }
 
 
