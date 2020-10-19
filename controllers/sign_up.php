@@ -2,6 +2,9 @@
 $login=$_POST['name']; // $_POST['name']
 $password=$_POST['pass'];
 
+$query = mysql_query("SELECT email FROM users WHERE 'email' = '$email'");
+
+
 if ($login=="" || $password==""){
 	exit("Empty login or password");
 	redirect("http://localhost",false);
